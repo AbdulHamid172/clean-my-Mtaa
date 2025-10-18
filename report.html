@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean My Mtaa - Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">♻️ Clean My Mtaa</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="report.html" class="nav-link active">Report</a></li>
+                <li><a href="tips.html" class="nav-link">Tips</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="report-section">
+            <div class="container">
+                <h2>Report Dirty Spots</h2>
+                <p>Help us identify areas that need cleaning in Mombasa</p>
+                
+                <div class="report-form-container">
+                    <form id="reportForm" class="report-form">
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" name="location" required placeholder="Enter the location of the dirty spot">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" required placeholder="Describe the issue..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="photo">Upload Photo</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" capture="camera">
+                            <small>Take a photo or upload from your gallery</small>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit Report</button>
+                    </form>
+                    
+                    <div class="map-placeholder">
+                        <h4>Reported Locations Map</h4>
+                        <div class="map-container">
+                            <!-- Simple map representation -->
+                            <div class="simple-map">
+                                <div class="map-point" style="top: 30%; left: 40%;" data-location="Nyali"></div>
+                                <div class="map-point" style="top: 60%; left: 70%;" data-location="Bamburi"></div>
+                                <div class="map-point" style="top: 45%; left: 55%;" data-location="Mombasa Island"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clean My Mtaa. Keeping Mombasa Beautiful.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
